@@ -13,16 +13,17 @@ Three sample customers were added (Alex Turner, Gracie Abrams, Justin Bieber), a
 
 ## 🔍 SQL Join Queries
 The following types of JOINs are demonstrated:
-- **INNER JOIN**: Returns matching rows from both tables
+
+- **INNER JOIN**: Returns only rows where there is a match in both `Customers` and `Orders`.
 <img width="292" alt="image" src="https://github.com/user-attachments/assets/067795aa-07bc-4692-9921-237feacffd6e" />
 
-- **LEFT JOIN**: Returns all customers, with matching orders if any
+- **LEFT JOIN**: Returns all customers, even if they haven't placed any orders. Unmatched order fields will show `NULL`.
 <img width="299" alt="image" src="https://github.com/user-attachments/assets/67ba5c77-559c-49ec-812e-38e38c9b4efe" />
 
-- **RIGHT JOIN**: Returns all orders, with matching customers if any (MySQL only)
+- **RIGHT JOIN**: Returns all orders, even if the customer doesn’t exist. Unmatched customer fields will show `NULL`.
 <img width="299" alt="image" src="https://github.com/user-attachments/assets/4ea24260-c1e2-403d-ac8c-50fd05e19d61" />
 
-- **FULL OUTER JOIN**: Returns all records from both tables (simulated using `UNION`)
+- **FULL OUTER JOIN**: Returns all customers and all orders. Rows with no match on either side will contain `NULL`.
 <img width="295" alt="image" src="https://github.com/user-attachments/assets/75fec24e-88d3-4eca-bc82-d0bc000c3836" />
 
 ## 📁 Files Included
